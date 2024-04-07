@@ -1,6 +1,6 @@
 # OSPF Lab
 
-![Untitled](OSPF%20Lab%2071ccac7fa013433e84eb2646f3e0ec68/Untitled.png)
+![OSPF diagram](1.png)
 
 - Router-1 Setup
 
