@@ -1,0 +1,22 @@
+Configure LAN Ethernet interface
+
+R1# conf t
+R1(config)# interface fastEthernet 0/0
+R1(config-if)# ip address 192.168.1.1 255.255.255.0
+R1(config-if)# no shut
+R1(config-if)# description LAN-INT
+R1# show ip interface brief
+
+Configure WAN Serial interface
+
+R1# conf t
+R1(config)# interface s1/0
+R1(config-if)# ip address 10.0.0.1 255.255.255.252
+R1(config-if)# no shut
+R1(config-if)# description TO-WAN
+R1# show ip interface brief
+
+Configure a default route using ISP WAN IP address as the next hop IP address
+
+R1(config)# ip route 0.0.0.0 0.0.0.0 10.0.0.2
+R1# sh ip route
